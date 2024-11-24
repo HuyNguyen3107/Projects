@@ -1,0 +1,181 @@
+.achievement {
+    text-align: center;
+    margin-top: 80px;
+
+    h2 {
+        color: $headingColor;
+        font-size: 3.1667rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 131.523%;
+    }
+
+    >p {
+        margin-top: 20px;
+        color: $textColor;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.417px;
+    }
+
+    .row {
+        justify-content: center;
+        margin-top: 80px;
+        align-items: center;
+        position: relative;
+        .achievement-detail {
+            border-radius: 3.333px;
+            background-color: #fff;
+            box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px rgba(54, 54, 54, 0.12);
+            text-align: left;
+            padding: 35px 35px 60px;
+
+            .medal {
+                background-color: #FFF0E7;
+                border-radius: 10px;
+                display: inline-block;
+                padding: 10px;
+            }
+
+            b {
+                display: block;
+                color: $textColor;
+                font-size: 4.3333rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-top: 10px;
+            }
+
+            >p {
+                margin-top: 16px;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 3.0833rem;
+                color: $textColor;
+            }
+        }
+
+        .col-xl-4 {
+            .achievement-detail {
+                .medal {
+                    background-color: #F2FFEC;
+                }
+                padding: 65px 40px;
+                margin: 0 20px;
+                >p {
+                    max-width: 100%;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            background-color: #DCFFCA;
+            top: -90px;
+            left: 0;
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            background-color: #FFD5BD;
+            bottom: -115px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    .achievement {
+        .row {
+            .col-xl-4 {
+                .achievement-detail {
+                    padding: 35px 10px;
+                    margin: 0;
+                }
+            }
+            .achievement-detail {
+                padding: 35px 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .achievement {
+        .row {
+            .col-xl-4 {
+                .achievement-detail {
+                    padding: 20px 5px;
+                    margin: 0;
+                }
+            }
+            .achievement-detail {
+                padding: 20px 5px;
+                b {
+                    font-size: 3.5rem;
+                }
+                > p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767.98px) {
+    .achievement {
+        h2 {
+            margin: 0 15px;
+        }
+        > p {
+            margin: 0 15px;
+        }
+        .row {
+            .col-xl-4 {
+                .achievement-detail {
+                    padding: 20px 5px;
+                    margin: 12px 0;
+
+                }
+            }
+            .achievement-detail {
+                padding: 20px 5px;
+                b {
+                    font-size: 3.5rem;
+                }
+                > p {
+                    font-size: 1.5rem;
+                }
+            }
+            .col-sm-12 {
+                width: 100%;
+            }
+            &::before {
+               width: 200px;
+               height: 200px;
+            }
+            &::after {
+               height: 200px;
+               width: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .achievement {
+        h2 {
+            font-size: 2.5rem;
+        }
+        > p {
+            font-size: 1.5rem;
+        }
+    }
+}

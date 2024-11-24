@@ -1,0 +1,53 @@
+.table-result {
+  border: 2px solid #2c7a7b;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table-result table {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.table-result thead tr th {
+  color: #2c7a7b;
+}
+
+.table-result tbody tr td {
+  border-bottom: 1px solid lightblue;
+  padding: 2px 0;
+}
+
+.info-result {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.play-times,
+.max-input {
+  color: #4a5a68;
+  font-weight: 600;
+}
+
+.max-input .max-value {
+  color: #319795;
+}
+
+.correct-rate {
+  font-weight: 600;
+  color: #a82c2c;
+}
+
+.table-result table tbody tr {
+  color: #319795;
+}
+.box {
+  overflow-x: scroll;
+  scrollbar-width: thin;
+}

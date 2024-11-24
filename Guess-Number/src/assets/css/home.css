@@ -1,0 +1,59 @@
+.container {
+  min-height: 100vh;
+  /* background-color: #1a202c; */
+}
+
+.theme {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.pi-sun,
+.pi-moon {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.pi-moon:hover {
+  background-color: #008080;
+  color: #fff;
+}
+
+.pi-sun:hover {
+  background-color: #fff;
+  color: #025e5e;
+}
+
+.pi-sun {
+  color: #fff;
+}
+
+.pi-moon {
+  color: #025e5e;
+}
+
+.game {
+  padding: 20px;
+}
+
+.pi-trash {
+  position: fixed;
+  right: 25px;
+  top: 338px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #008080;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.pi-trash:hover {
+  background-color: #025e5e;
+  color: red;
+}

@@ -1,0 +1,58 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #0000006e;
+}
+
+.confirm-box {
+  position: fixed;
+  width: 300px;
+  margin: 200px auto;
+  inset: 0;
+  background-color: #319795;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  z-index: 100;
+}
+
+.confirm-box span {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.btn-list {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.btn-list button {
+  border: none;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-remain {
+  background-color: darkgoldenrod;
+}
+
+.btn-delete {
+  background-color: darkred;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: darkred;
+}
+.btn-remain:hover {
+  background-color: #fff;
+  color: darkgoldenrod;
+}

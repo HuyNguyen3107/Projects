@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+#blog {
+  margin: 80px;
+}
+
+#blog .heading {
+  color: rgb(5, 167, 5);
+}
+
+.sign-in {
+  margin-top: 20px;
+  padding: 20px 60px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(5, 167, 5);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.sign-in:hover {
+  background-color: #fff;
+  color: rgb(5, 167, 5);
+  transform: scale(0.9);
+}
+
+.posts {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.post {
+  display: flex;
+  column-gap: 20px;
+  position: relative;
+}
+
+.post::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  left: 0;
+  bottom: -20px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.time-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.preiod {
+  position: relative;
+}
+.preiod::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(5, 167, 5);
+  left: 0;
+}
+.preiod span {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(5, 167, 5);
+  left: 0;
+}
+.preiod::before {
+  top: -4px;
+}
+.preiod span {
+  bottom: -4px;
+}
+.tag-name {
+  margin-bottom: 80px;
+  transform: rotate(-90deg) translateY(20px);
+}
+
+.post-detail {
+  flex: 4;
+}
+
+.info-user,
+.info-user-main {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(5, 167, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+}
+
+.user-name a {
+  /* text-decoration: none; */
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.title {
+  margin-top: 20px;
+  color: rgb(5, 167, 5);
+}
+.post-content {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.view-detail-post {
+  margin-top: 30px;
+}
+
+.view-detail-post a,
+.user-profile a {
+  border: 1px solid rgb(5, 167, 5);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 99px;
+  color: rgb(5, 167, 5);
+  font-weight: 600;
+}
+
+.post-footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-in-page,
+.sign-up-page {
+  display: flex;
+  margin-top: 300px;
+  justify-content: space-between;
+  /* align-items: center; */
+  column-gap: 10px;
+}
+.sign-in-note,
+.sign-up-note {
+  flex: 2;
+  text-align: center;
+}
+.note-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.note-content {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.go-signin,
+.go-signup {
+  text-decoration: none;
+  color: rgb(5, 167, 5);
+}
+.sign-in-form,
+.sign-up-form {
+  flex: 1;
+}
+
+.sign-in-form form,
+.sign-up-form form {
+  width: 70%;
+}
+
+.go-home {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(5, 167, 5);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.email-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-field label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(5, 167, 5);
+}
+.email-field #email,
+.password-field #password,
+.name-field #name,
+.title-field #title,
+.time-field #time-post,
+.content-field #content {
+  margin-top: 10px;
+  background-color: #534747;
+  color: #fff;
+  border: none;
+  padding: 10px 100px 10px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.password-field {
+  margin-top: 10px;
+}
+.name-field {
+  margin-bottom: 10px;
+}
+.content-field {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.password-field label,
+.name-field label,
+.title-field label,
+.time-field label,
+.content-field label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(5, 167, 5);
+}
+
+.btn-list {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-sign-in,
+.btn-sign-up,
+.btn-post-new,
+.btn-go-home,
+.go-home-page {
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(5, 167, 5);
+  border-radius: 8px;
+  padding: 15px 40px;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+
+.btn-sign-in:hover,
+.btn-sign-up:hover,
+.btn-post-new:hover,
+.btn-go-home:hover,
+.go-home-page:hover {
+  background-color: #fff;
+  color: rgb(5, 167, 5);
+  transform: scale(0.9);
+}
+
+.user-control {
+  display: flex;
+  justify-content: space-between;
+}
+.user-control form {
+  margin-top: 30px;
+}
+
+.btn-post-new {
+  margin-top: 20px;
+}
+
+.btn-logout {
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: red;
+  border-radius: 8px;
+  padding: 15px 40px;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.btn-logout:hover {
+  background-color: #fff;
+  color: red;
+  transform: scale(0.9);
+}
+
+.profile h2 a {
+  border: 1px solid rgb(5, 167, 5);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 99px;
+  color: rgb(5, 167, 5);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.go-home-page {
+  margin-top: 20px;
+}
+
+.profile > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(5, 167, 5);
+}
+
+.loading {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  transform: translateX(2000px);
+  transition: transform 1s ease;
+}
+
+.progress-bar {
+  background-color: red;
+  height: 5px;
+  width: 100%;
+}
+.progress {
+  background-color: green;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 2s linear;
+}
+
+.time-field {
+  position: relative;
+}
+.fa-calendar {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calendar-container {
+  margin-top: 20px;
+  display: none;
+}
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+.wrapper .calendar-header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+.calendar-header .icons {
+  display: flex;
+}
+.calendar-header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons span:last-child {
+  margin-right: -10px;
+}
+.icons span i {
+  font-size: 16px;
+}
+.calendar-header .icons span:hover {
+  background: #f2f2f2;
+}
+.calendar-header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+.calendar {
+  padding: 20px;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li,
+.years li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li,
+.years li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: #9b59b6;
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
+.calendar-header {
+}
+.years {
+  position: absolute;
+  display: none;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar-header > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  column-gap: 5px;
+  cursor: pointer;
+}
+.calendar-header > div:nth-of-type(1) i {
+  color: #2a2a2a;
+  font-size: 18px;
+  /* transition: transform .2s linear; */
+}
+.years li {
+  padding: 5px;
+  border-radius: 4px;
+}
+.years li:hover {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+.selected {
+  background-color: #9b59b6;
+  color: #fff !important;
+}
+.post-detail-page {
+  color: #fff;
+}
+
+.post-detail-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(5, 167, 5);
+}
+.post-detail-content {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 40%;
+}
+
+.post-detail-page .user-profile {
+  margin-top: 20px;
+}
+
+.period-time {
+  margin-top: 10px;
+  /* color: rgb(5, 167, 5); */
+}
+
+.time-detail {
+  margin-top: 10px;
+  /* color: rgb(5, 167, 5); */
+}
+
+.btn-go-home {
+  margin-top: 10px;
+}
+
+.post-detail-line {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(5, 167, 5);
+  margin-top: 10px;
+}
+
+.phone-regex {
+  color: darkred;
+  font-weight: 700;
+  border-radius: 99px;
+}
+
+.mail-regex {
+  color: darkgreen;
+  font-weight: 700;
+  border-radius: 99px;
+}
+
+.link-regex {
+  color: darkgoldenrod;
+  font-weight: 700;
+  border-radius: 99px;
+}

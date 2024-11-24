@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  /* background-color: #4158d0; */
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 30%;
+  /* background-color: #fff; */
+  /* display: none; */
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 4px rgba(245, 245, 245, 0.27);
+}
+
+.music-name {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.music-name::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  background-color: #c850c0;
+}
+
+.play-img {
+  text-align: center;
+}
+
+.image-music img {
+  width: 50%;
+  margin-top: 12px;
+  border-radius: 50%;
+}
+
+.effect {
+  animation: anime 20s linear infinite;
+}
+
+.progress-bar {
+  height: 14px;
+  background-color: gainsboro;
+  position: relative;
+  cursor: pointer;
+  border-radius: 99px;
+}
+
+.timeline {
+  position: absolute;
+  background-color: #fff;
+  color: purple;
+  top: -25px;
+  left: 0;
+  font-size: 12px;
+  display: none;
+  border-radius: 99px;
+  padding: 4px;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: purple;
+  border-radius: 99px;
+}
+
+.progress-bar .progress span {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  right: 0;
+  background: blueviolet;
+  translate: 50% -50%;
+  border-radius: 50%;
+}
+
+.player {
+  width: 80%;
+  margin: 16px auto;
+}
+.player .play-btn-list {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 40px;
+}
+.fa-play {
+  cursor: pointer;
+}
+.forward-left {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.forward-right {
+  cursor: pointer;
+}
+.player .play-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+}
+.play-inner .progress-bar {
+  width: 100%;
+}
+
+@keyframes anime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.play-list {
+  position: absolute;
+  width: 300px;
+  /* right: 0; */
+  right: -400px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: #c850c0;
+  border-radius: 8px;
+}
+.play-item {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  /* justify-content: center; */
+  padding: 10px 0 0 10px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.play-item-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.select-music {
+  background-color: #fff;
+  color: #c850c0;
+}
+.play-karaoke {
+  position: absolute;
+  top: 150px;
+  left: -250px;
+  padding: 20px;
+  background-color: #c850c0;
+  color: #fff;
+  border-radius: 99px;
+  border: 1px solid #fff;
+  font-weight: 900;
+  box-shadow: 0 0 4px #fff;
+  cursor: pointer;
+}
+.karaoke {
+  position: fixed;
+  inset: 0;
+  translate: 0 100vh;
+  transition: translate 0.5s linear;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+.karaoke-header {
+  display: flex;
+  width: 70%;
+  margin: 50px auto 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+.karaoke-header i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.karaoke-content {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+}
+.show {
+  translate: 0 0;
+}
+.karaoke-content p {
+  transition: opacity 0.3s ease;
+}
+.karaoke-content p > span {
+  position: relative;
+}
+.karaoke-content p > span > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: darkviolet;
+  width: 0;
+  overflow: hidden;
+  z-index: 5;
+}

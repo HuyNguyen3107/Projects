@@ -1,0 +1,23 @@
+.notice {
+  margin-top: 10px;
+}
+
+.notice-header,
+.remaining-plays,
+.notice-range {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.notice-header {
+  color: #319795;
+}
+
+.remaining-plays {
+  display: block;
+  color: #2c7a7b;
+}
+
+.notice-range {
+  color: #285e61;
+}

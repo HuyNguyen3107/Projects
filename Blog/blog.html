@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../icons/fontawesome-free-6.4.0/fontawesome-free-6.4.0/css/all.css">
+    <link rel="stylesheet" href="./blog.css">
+    <title>Blogger</title>
+</head>
+
+<body>
+    <div id="root">
+        <div id="blog">
+            <!-- <div class="page-start">
+                <h1 class="heading">Blogger</h1>
+                <button class="sign-in">Sign in</button>
+                <div class="posts">
+                    <div class="post">
+                        <div class="time">
+                            <div class="time-detail">
+                                <span class="preiod">1 hour ago
+                                    <span></span>
+                                </span>
+                                <div class="time-post">
+                                    <span class="hours">11 pm</span>
+                                     <span class="minutes">28 minutes</span>
+                                </div>
+                            </div>
+                            <span class="tag-name">@admin</span>
+                        </div>
+                        <div class="post-detail">
+                            <div class="info-user">
+                                <div class="avatar"><a href="#">A</a></div>
+                                <div class="user-name"><a href="#">Admin</a></div>
+                            </div>
+                            <h2 class="title">Test demo</h2>
+                            <p class="post-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum ut laboriosam
+                                temporibus vel, facilis incidunt eius illo voluptas debitis saepe perspiciatis placeat neque
+                                ullam, qui dolores at perferendis? Consequuntur.
+                            </p>
+                            <div class="view-detail-post"><a href="#"># view more test...</a></div>
+                            <div class="post-footer">
+                                <div class="user-profile"><a href="#"># admin01</a></div>
+                                <div class="read-time">Khoảng 1 giây đọc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="sign-in-page">
+                <div class="sign-in-note">
+                    <span class="note-title">Đăng nhập</span>
+                    <p class="note-content">
+                        Hãy nhập email và mật khẩu của bạn để truy cập vào nền tảng Blogger, nơi bạn có thể tạo và chia
+                        sẻ
+                        những bài viết độc đáo của mình. Nếu bạn chưa có tài khoản, hãy <a class="go-signup"
+                            href="#">đăng ký ngay</a> để tham gia cộng đồng
+                        Blogger
+                    </p>
+                    <a class="go-home" href="#">Về trang chủ</a>
+                </div>
+                <div class="sign-in-form">
+                    <form action="">
+                        <div class="email-field">
+                            <label for="email">Enter Your Email</label>
+                            <input type="email" placeholder="Please enter the email" id="email" required>
+                        </div>
+                        <div class="password-field">
+                            <label for="password">Enter Your Password</label>
+                            <input type="password" placeholder="Please enter the password" id="password" required>
+                        </div>
+                        <div class="btn-list">
+                            <button class="btn-sign-in">Sign in</button>
+                            <button class="btn-sign-up">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            <!-- <div class="sign-up-page">
+                <div class="sign-up-note">
+                    <span class="note-title">Đăng ký</span>
+                    <p class="note-content">
+                        Bạn muốn tham gia cộng đồng Blogger, nơi bạn có thể tạo và chia sẻ những bài viết độc đáo của
+                        mình? Hãy điền thông tin của bạn vào biểu mẫu dưới đây để tạo tài khoản miễn phí. Bạn sẽ nhận
+                        được nhiều ưu đãi, thông tin mới nhất và cơ hội giao lưu với những blogger khác khi đăng ký.
+                        Đừng bỏ lỡ cơ hội này, hãy đăng ký ngay! Nếu bạn đã có tài khoản, <a class="go-signin"
+                            href="#">Đăng nhập ngay!</a>
+                    </p>
+                    <a class="go-home" href="#">Về trang chủ</a>
+                </div>
+                <div class="sign-up-form">
+                    <form action="">
+                        <div class="name-field">
+                            <label for="name">Enter Your Name</label>
+                            <input type="text" placeholder="Please enter the name" id="name" required>
+                        </div>
+                        <div class="email-field">
+                            <label for="email">Enter Your Email</label>
+                            <input type="email" placeholder="Please enter the email" id="email" required>
+                        </div>
+                        <div class="password-field">
+                            <label for="password">Enter Your Password</label>
+                            <input type="password" placeholder="Please enter the password" id="password" required>
+                        </div>
+                        <div class="btn-list">
+                            <button class="btn-sign-in">Sign in</button>
+                            <button class="btn-sign-up">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            <!-- 
+            <div class="logged-in-page">
+                <div class="user-control">
+                    <div class="post-new">
+                        <h1 class="heading">Blogger</h1>
+                        <div class="info-user">
+                            <div class="avatar"><a href="#">A</a></div>
+                            <div class="user-name"><a href="#">Admin</a></div>
+                        </div>
+                        <form action="">
+                            <div class="title-field">
+                                <label for="title">Enter Your Title</label>
+                                <input type="text" placeholder="Please enter the title" id="title" required>
+                            </div>
+                            <div class="content-field">
+                                <label for="content">Enter Your Content</label>
+                                <textarea name="content" id="content" cols="30" rows="10"
+                                    placeholder="Please enter your content"></textarea>
+                            </div>
+                            <div class="time-field">
+                                <label for="time-post">Set time to post!</label>
+                                <input type="text" placeholder="MM/DD/YYYY" id="time-post" disabled>
+                                <i class="fa-regular fa-calendar"></i>
+                                <div class="calendar-cointainer">
+                                    <div class="wrapper">
+                                        <div class="calendar-header">
+                                            <p class="current-date"></p>
+                                            <div class="icons">
+                                                <span id="prev">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </span>
+                                                <span id="next">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="calendar">
+                                            <ul class="weeks">
+                                                <li>Sun</li>
+                                                <li>Mon</li>
+                                                <li>Tue</li>
+                                                <li>Wed</li>
+                                                <li>Thu</li>
+                                                <li>Fri</li>
+                                                <li>Sat</li>
+                                            </ul>
+                                            <ul class="days"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-post-new">Write new!</button>
+                        </form>
+                    </div>
+                    <div><button class="btn-logout">Sign out</button></div>
+                </div>
+                <div class="posts">
+                    <div class="post">
+                        <div class="time">
+                            <div class="time-detail">
+                                <span class="preiod">1 hour ago
+                                    <span></span>
+                                </span>
+                                <div class="time-post">
+                                    <span class="hours">11 pm</span>
+                                    <span class="minutes">28 minutes</span>
+                                </div>
+                            </div>
+                            <span class="tag-name">@admin</span>
+                        </div>
+                        <div class="post-detail">
+                            <div class="info-user">
+                                <div class="avatar"><a href="#">A</a></div>
+                                <div class="user-name"><a href="#">Admin</a></div>
+                            </div>
+                            <h2 class="title">Test demo</h2>
+                            <p class="post-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum ut laboriosam
+                                temporibus vel, facilis incidunt eius illo voluptas debitis saepe perspiciatis placeat
+                                neque
+                                ullam, qui dolores at perferendis? Consequuntur.
+                            </p>
+                            <div class="view-detail-post"><a href="#"># view more test...</a></div>
+                            <div class="post-footer">
+                                <div class="user-profile"><a href="#"># admin01</a></div>
+                                <div class="read-time">Khoảng 1 giây đọc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="profile-page">
+                <div class="profile">
+                    <h2>Personal profile: <a href="#"># admin</a></h2>
+                    <button class="go-home-page">Về trang chủ</button>
+                    <span>View user blog:</span>
+                </div>
+                <div class="posts">
+                    <div class="post">
+                        <div class="time">
+                            <div class="time-detail">
+                                <span class="preiod">1 hour ago
+                                    <span></span>
+                                </span>
+                                <div class="time-post">
+                                    <span class="hours">11 pm</span>
+                                    <span class="minutes">28 minutes</span>
+                                </div>
+                            </div>
+                            <span class="tag-name">@admin</span>
+                        </div>
+                        <div class="post-detail">
+                            <div class="info-user">
+                                <div class="avatar"><a href="#">A</a></div>
+                                <div class="user-name"><a href="#">Admin</a></div>
+                            </div>
+                            <h2 class="title">Test demo</h2>
+                            <p class="post-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum ut laboriosam
+                                temporibus vel, facilis incidunt eius illo voluptas debitis saepe perspiciatis placeat
+                                neque
+                                ullam, qui dolores at perferendis? Consequuntur.
+                            </p>
+                            <div class="view-detail-post"><a href="#"># view more test...</a></div>
+                            <div class="post-footer">
+                                <div class="user-profile"><a href="#"># admin01</a></div>
+                                <div class="read-time">Khoảng 1 giây đọc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="post-detail-page">
+                <div class="post-detail-title">
+                    Hello brother
+                </div>
+                <div class="post-detail-content">
+                    Hello 5000 anh em nha!
+                </div>
+                <div class="user-profile"><a href="#">#username123</a></div>
+                <div class="post-detail-line"></div>
+                <div class="period-time">2 hours ago</div>
+                <div class="time-detail">year: 2023
+                    months: 10
+                    day: 2
+                    date: Thứ 5
+                    hours: 18
+                    mins: 53</div>
+                <button class="btn-go-home">Go Home Page</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="loading">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="alert">
+        <span class="alert-content">Email or password is not valid</span>
+        <i class="fa-solid fa-bell"></i>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <script type="module" src="./js/blog.js"></script>
+</body>
+
+</html>

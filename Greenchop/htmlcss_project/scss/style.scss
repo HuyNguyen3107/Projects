@@ -1,0 +1,17 @@
+@import"parts/variable";
+@import"parts/fonts";
+@import"parts/reset";
+@import"parts/mixin";
+@import"parts/base";
+
+@import"layouts/header";
+@import"layouts/footer";
+
+@import"pages/home/hero";
+@import"pages/home/achievement";
+@import"pages/home/products";
+@import"pages/home/news";
+@import"pages/home/quality";
+@import"pages/home/certification";
+@import"pages/home/contact";
+

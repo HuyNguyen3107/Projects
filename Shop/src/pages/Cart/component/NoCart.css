@@ -1,0 +1,36 @@
+.no-cart {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.no-cart h1 {
+  text-align: center;
+  font-size: 40px;
+  color: darkmagenta;
+  margin-bottom: 20px;
+}
+
+.no-cart button {
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+  width: 40%;
+}
+
+.no-cart button:hover {
+  transform: scale(0.9);
+}
+
+.no-cart .pi-bitcoin {
+  font-size: 100px;
+  color: darkgoldenrod;
+}

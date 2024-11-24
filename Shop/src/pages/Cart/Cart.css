@@ -1,0 +1,146 @@
+.cart {
+  max-width: 800px;
+  margin: 150px auto 0;
+}
+
+.cart h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.cart-product-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.cart-product {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cart-product-info {
+  display: flex;
+  column-gap: 60px;
+}
+
+.cart-product-img img {
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 3px purple;
+  border-radius: 6px;
+}
+
+.cart-product-info > div:nth-of-type(2) > div {
+  display: flex;
+  column-gap: 80px;
+}
+
+.cart-product-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: purple;
+}
+
+.cart-product-name {
+  font-size: 20px;
+}
+
+.cart-product-price {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  color: purple;
+}
+
+.rest-quantity {
+  display: inline-block;
+  margin-left: 190px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cart-edit {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity-change input {
+  width: 60px;
+  text-align: center;
+  padding: 4px 8px;
+  border: 1px solid purple;
+
+  font-weight: 500;
+  color: darkmagenta;
+}
+
+.increase,
+.decrease {
+  width: 30px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 1px solid purple;
+  background-color: violet;
+  color: #fff;
+}
+
+.cart-edit > div:nth-of-type(2) {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.pi-trash {
+  color: darkred;
+  cursor: pointer;
+}
+
+.total-price {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.cart > div:nth-of-type(2) {
+  margin-top: 30px;
+  display: flex;
+}
+.btn-home-page {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  border-radius: 8px 0 0 8px;
+  background-color: darkorange;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.btn-checkout {
+  flex: 3;
+  border: none;
+  padding: 15px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.btn-checkout:hover,
+.btn-home-page:hover {
+  transform: scale(1.1);
+}

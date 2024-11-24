@@ -1,0 +1,27 @@
+.hero {
+    background-color: #F2FFEC;
+    padding: 58px 0;
+
+    .container {
+        .row {
+            h1 {
+                font-size: 4.3333rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $textColor;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .hero {
+        .container {
+            .row {
+                h1 {
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
