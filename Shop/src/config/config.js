@@ -1,1 +1,1 @@
-export const SERVER_API_AUTH = "https://api-exercise-sopi.vercel.app/api/v1";
+export const SERVER_API_AUTH = import.meta.env.VITE_SERVER_API_AUTH;

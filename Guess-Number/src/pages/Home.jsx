@@ -24,9 +24,9 @@ function Home() {
       setTheme("dark");
       localStorage.setItem("theme", "dark");
       containerRef.current.style.backgroundColor = "#1a202c";
-      notifySuccess("Đang ở chế độ đen tối");
+      notifySuccess("Đã chuyển sang chế độ tối");
     } else {
-      notifySuccess("Đang ở chế độ trong sáng");
+      notifySuccess("Đã chuyển sang chế độ sáng");
       setTheme("light");
       localStorage.setItem("theme", "light");
       containerRef.current.style.backgroundColor = "#fff";

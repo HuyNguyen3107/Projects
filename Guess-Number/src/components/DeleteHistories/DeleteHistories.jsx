@@ -19,7 +19,7 @@ function DeleteHistories() {
     dispatch({
       type: "delete/toggle",
     });
-    notifySuccess("Xóa lịch sử thành công gòi nghen");
+    notifySuccess("Xóa lịch sử thành công");
   };
   useEffect(() => {
     document.addEventListener("keyup", (e) => {

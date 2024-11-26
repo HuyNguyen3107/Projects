@@ -9,7 +9,7 @@ function Welcome() {
   };
   return (
     <div className="welcome">
-      <h1 className="wel-header">Welcome to Huy'SHOP</h1>
+      <h1 className="wel-header">Welcome to Huy SHOP</h1>
       <p className="wel-desc">
         Let's click the button below to view our products!
       </p>

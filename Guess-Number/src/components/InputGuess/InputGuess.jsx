@@ -33,7 +33,7 @@ function InputGuess() {
     if (count <= +maxTimes) {
       if (!isEnd) {
         if (+inputRef.current.value > maxNum) {
-          notifyWarning("Giá trị nhập vào đang bị quá giới hạn đó nha");
+          notifyWarning("Giá trị nhập vào đang bị quá giới hạn");
         } else if (!+inputRef.current.value) {
           notifyError("Nhập giá trị vào nghen");
         } else {
@@ -70,35 +70,29 @@ function InputGuess() {
               if (count === +maxTimes) {
                 dispatch({
                   type: "compare",
-                  payload:
-                    "Đáng lẽ ra anh Quân nên tăng thêm xíu nữa. Buồn anh Quân",
+                  payload: "Đáng lẽ ra bạn nên tăng thêm xíu nữa",
                 });
-                notifyInfo(
-                  "Đáng lẽ ra anh Quân nên tăng thêm xíu nữa. Buồn anh Quân"
-                );
+                notifyInfo("Đáng lẽ ra bạn nên tăng thêm xíu nữa");
               } else {
                 dispatch({
                   type: "compare",
-                  payload: "Hmmm... tăng thêm xíu đi anh Quân",
+                  payload: "Hmmm... tăng thêm xíu đi",
                 });
-                notifyInfo("Hmmm... tăng thêm xíu đi anh Quân");
+                notifyInfo("Hmmm... tăng thêm xíu đi");
               }
             } else if (correctNum < +inputRef.current.value) {
               if (count === +maxTimes) {
                 dispatch({
                   type: "compare",
-                  payload:
-                    "Đáng lẽ ra anh Quân nên giảm thêm xíu nữa. Buồn anh Quân",
+                  payload: "Đáng lẽ ra bạn nên giảm thêm xíu nữa",
                 });
-                notifyInfo(
-                  "Đáng lẽ ra anh Quân nên giảm thêm xíu nữa. Buồn anh Quân"
-                );
+                notifyInfo("Đáng lẽ ra bạn nên giảm thêm xíu nữa");
               } else {
                 dispatch({
                   type: "compare",
-                  payload: "Hmmm... giảm xíu nữa đi anh Quân",
+                  payload: "Hmmm... giảm xíu nữa đi",
                 });
-                notifyInfo("Hmmm... giảm xíu nữa đi anh Quân");
+                notifyInfo("Hmmm... giảm xíu nữa đi");
               }
             } else {
               dispatch({

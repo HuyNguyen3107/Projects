@@ -13,12 +13,16 @@ function ProductList() {
   const productList = useSelector((state) => state.productList.productList);
   const status = useSelector((state) => state.productList.status);
   const page = useSelector((state) => state.paginate.currentPage);
+  // useEffect(() => {
+  //   dispatch(getProducts(page));
+  // }, []);
   useEffect(() => {
-    dispatch(getProducts(page));
-  }, []);
-  useEffect(() => {
-    console.log(page);
-    dispatch(getProducts(page));
+    const temp = location.pathname.slice(
+      location.pathname.lastIndexOf("/") + 1
+    );
+    if (+temp === +page) {
+      dispatch(getProducts(page));
+    }
   }, [page]);
   const handleAddCart = (id) => {
     const item = productList.find((product) => {
@@ -28,7 +32,6 @@ function ProductList() {
   };
   return (
     <div className="product-list">
-      {console.log(productList)}
       <h2>PRODUCT LIST</h2>
       <ul>
         {productList.map((product, index) => {
